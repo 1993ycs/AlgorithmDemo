@@ -13,6 +13,7 @@ package listDemo;
 public class ListNode {
     int value;
     ListNode next;
+    ListNode pre;
     ListNode(int x) { value = x; }
     @Override
     public String toString() {
@@ -60,8 +61,9 @@ public class ListNode {
 //        }
         do {
             System.out.print(listNode.value);
-            System.out.print(" ");
+            System.out.print("->");
             listNode = listNode.next;
         }while (listNode != null);
+        System.out.print("NULL");
     }
 }

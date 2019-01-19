@@ -1,7 +1,7 @@
 package listDemo;
 
 /**
- *
+ * 翻转链表
  */
 public class ListDemo1 {
     public static void main(String[] args) {
@@ -11,28 +11,14 @@ public class ListDemo1 {
         ListNode listNode1 = reverseList(listNode);
         System.out.println();
         ListNode.printListNode(listNode1);
-        System.out.println(reverseList(listNode1));
 
     }
 
     /**
-     * o(n)
-     * @param listCode
+     * O(N)
+     * @param head
      * @return
      */
-    private static ListNode reverseLsit(ListNode listCode){
-        if (listCode == null || listCode.next == null){
-            return listCode;
-        }
-        ListNode pre = null;
-        ListNode cur = listCode;
-        while (listCode != null){
-            ListNode next = cur.next;
-            pre = cur;
-            cur = next;
-        }
-        return pre;
-    }
     public static ListNode reverseList(ListNode head) {
 
         ListNode pre = null;
