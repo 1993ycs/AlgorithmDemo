@@ -1,6 +1,4 @@
-package listemo;
-
-import java.util.LinkedList;
+package listDemo;
 
 /**
  *
