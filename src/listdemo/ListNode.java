@@ -14,15 +14,20 @@ public class ListNode {
     int value;
     ListNode next;
     ListNode pre;
-    ListNode(int x) { value = x; }
-    ListNode(){
+
+    ListNode(int x) {
+        value = x;
+    }
+
+    ListNode() {
 
     }
+
     @Override
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(value);
-        while (next != null){
+        while (next != null) {
             stringBuffer.append(next.value);
             next = next.next;
         }
@@ -31,9 +36,10 @@ public class ListNode {
 
     /**
      * 初始化链表
+     *
      * @param arr
      */
-    public static ListNode createListNode(int [] arr){
+    public static ListNode createListNode(int[] arr) {
         if (arr == null) {
             return null;
         }
@@ -45,12 +51,14 @@ public class ListNode {
         }
         return head;
     }
+
     /**
      * 打印链表
+     *
      * @param listNode
      */
-    public static void printListNode(ListNode listNode){
-        if (listNode == null){
+    public static void printListNode(ListNode listNode) {
+        if (listNode == null) {
             System.out.println("链表为空");
         }
 //        if (listNode.next == null){
@@ -66,7 +74,34 @@ public class ListNode {
             System.out.print(listNode.value);
             System.out.print("->");
             listNode = listNode.next;
-        }while (listNode != null);
+        } while (listNode != null);
         System.out.print("NULL");
+        System.out.println();
+    }
+
+    public static int getLen(ListNode listNode) {
+//       / if (listNode == null){
+//            return 0;
+//        }
+        int count = 0;
+        ListNode cur = listNode;
+        while (cur != null) {
+            count++;
+            cur = cur.next;
+        }
+        return count;
+
+    }
+
+    public static ListNode findNode(ListNode listNode, int x) {
+
+        ListNode curNode = listNode;
+        while (curNode != null) {
+            if (curNode.value == x) {
+                return curNode;
+            }
+                curNode = curNode.next;
+            }
+        return null;
     }
 }
