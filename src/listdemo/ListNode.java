@@ -1,4 +1,4 @@
-package listDemo;
+package listdemo;
 
 /**
  * author:ycs
@@ -15,6 +15,9 @@ public class ListNode {
     ListNode next;
     ListNode pre;
     ListNode(int x) { value = x; }
+    ListNode(){
+
+    }
     @Override
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();

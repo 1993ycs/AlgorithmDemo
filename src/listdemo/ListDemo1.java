@@ -1,8 +1,9 @@
-package listDemo;
+package listdemo;
 
 /**
  * 翻转链表
  */
+@SuppressWarnings("ALL")
 public class ListDemo1 {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5};
