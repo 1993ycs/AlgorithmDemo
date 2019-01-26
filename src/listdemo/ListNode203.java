@@ -22,7 +22,7 @@ public class ListNode203 {
          new ListNode203().deleNode(node);
          ListNode.printListNode(listNode);
     }
-
+//o(n)
     private void  deleNode(ListNode node){
         if (node == null){
             return ;
