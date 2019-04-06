@@ -50,11 +50,11 @@ public class TreeNode094 {
         while (!stack.empty()) {
             Command command = stack.pop();
 
-            if (command.s.equals("print")) {
+            if ("print".equals(command.s)) {
                 res.add(command.node.value);
             }
             else {
-                assert command.s.equals("go");
+                assert "go".equals(command.s);
                 if (command.node.right != null) {
                     stack.push(new Command("go", command.node.right));
                 }

@@ -7,4 +7,7 @@ package commontest;
  * Time:15:30
  */
 public class CommonTest {
+    public static void main(String[] args) {
+        System.out.println(3|9);
+    }
 }

@@ -1,26 +1,14 @@
-package leecode;
-
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
-import java.util.Arrays;
+package arrayquestion;
 
 /**
  * author:ycs
  * email: yucs2017@163.com
- * Date:2019/3/31
- * Time:17:23
+ * Date:2019/4/6
+ * Time:16:49
  */
-public class Demo05 {
-    public static void main(String[] args) {
-        int [] num1 = {1,2,3,0,0,0};
-        int [] num2 = {2,5,6};
-        new Demo05().merge(num1, 3, num2, 3);
-
-    }
-
+public class Demo88 {
     /**
-     * 执行用时 : 1 ms, 在Merge Sorted Array的Java提交中击败了100.00% 的用户
-     * 内存消耗 : 37.3 MB, 在Merge Sorted Array的Java提交中击败了0.81% 的用户
+     * 两个有序数组合并为一个有序数组
      * @param nums1
      * @param m
      * @param nums2
@@ -44,7 +32,7 @@ public class Demo05 {
                 }else if (i < 0){
                     nums1[sum--] = nums2[j];
                     j--;
-                }else if (j < 0){
+                }else if (j<0){
                     nums1[sum--] = nums1[i];
                     i--;
                 }
