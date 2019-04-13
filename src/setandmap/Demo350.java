@@ -1,6 +1,7 @@
 package setandmap;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.TreeMap;
 
 /**
@@ -10,6 +11,15 @@ import java.util.TreeMap;
  * Time:22:11
  */
 public class Demo350 {
+    public static void main(String[] args) {
+        TreeMap<Integer, Integer> record = new TreeMap<Integer, Integer>();//排序的
+        int [] num = {1,2,9,4,5,6};
+        for (int temp: num
+             ) {
+            record.put(temp, 1);
+        }
+        System.out.println(record.toString());
+    }
     public int[] intersect(int[] nums1, int[] nums2) {
 
         TreeMap<Integer, Integer> record = new TreeMap<Integer, Integer>();
