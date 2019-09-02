@@ -80,7 +80,8 @@ public class Demo1 {
         for (int i = 0; i < nums.length ; i++) {
             int resSum = target - nums[i];
             if (map.containsKey(resSum)){
-                return  new int []{i, map.get(resSum)};
+                //return  new int []{i, map.get(resSum)};
+                return new int[]{i, map.get(resSum)};
             }
             map.put(nums[i],i);
         }

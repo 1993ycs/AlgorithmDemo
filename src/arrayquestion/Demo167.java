@@ -8,6 +8,10 @@ import java.util.Arrays;
  * Date:2019/4/6
  * Time:17:39
  */
+
+/**
+ * 碰撞指针
+ */
 public class Demo167 {
     public static void main(String[] args) {
         int [] arr = {2,7,11,15};

@@ -48,11 +48,11 @@ public class Demo02 {
         int zero = -1;          // [0...zero] == 0
         int two = nums.length;  // [two...n-1] == 2   [i...two-1]  ==1   [0..zero,i..two-1,two..n-1]
         for(int i = 0 ; i < two ; ){
-            if(nums[i] == 1)
+            if(nums[i] == 1) {
                 i ++;
-            else if (nums[i] == 2)
+            } else if (nums[i] == 2) {
                 swap(nums, i, --two);
-            else{ // nums[i] == 0
+            } else{ // nums[i] == 0
                 assert nums[i] == 0;
                 swap(nums, ++zero, i++);
             }

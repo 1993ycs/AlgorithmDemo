@@ -17,8 +17,6 @@ public class ListDemo83 {
         ListNode.printListNode(listNode);
         System.out.println();
         ListNode.printListNode(deleteDuplicates(listNode));
-
-
     }
 
     private static ListNode deleteDuplicates(ListNode head){
@@ -27,7 +25,7 @@ public class ListDemo83 {
         }
         ListNode cur = head;
         ListNode next = cur.next;
-        ListNode pre = null;
+//        ListNode pre = null;
         while (next != null){
             if (cur.value == next.value) {
                 next = next.next;
@@ -36,7 +34,6 @@ public class ListDemo83 {
             cur = cur.next;
         }
         return head;
-
 
     }
 }

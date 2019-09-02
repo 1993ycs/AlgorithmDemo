@@ -22,14 +22,14 @@ public class ExceptionHandle {
             return 1;
         } finally {
             System.out.println("finally");
-            //  return 2;
+//              return 2;
         }
         return 2;
     }
 
 
     public static void main(String[] args) {
-      int i =   ExceptionHandle.doWork();
+         int i =   ExceptionHandle.doWork();
         System.out.println("-----"+i);
         System.out.println("end");
     }
