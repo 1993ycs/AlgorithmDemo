@@ -9,6 +9,9 @@ public class QSort {
         int [] nums = {2,1,3,4,6,5};
         qSort(nums);
         System.out.println(Arrays.toString(nums));
+        String s = "123llkgfag";
+        System.out.println(s.charAt(0) == s.charAt(1));
+        System.out.println(Arrays.stream(nums).max());
     }
 
 

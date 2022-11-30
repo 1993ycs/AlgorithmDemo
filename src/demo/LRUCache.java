@@ -78,5 +78,7 @@ class LRUCache {
         lruCache.put(2,2);
         lruCache.put(3,3);
         lruCache.get(2);
+        HashMap<Object, Object> map = new HashMap<>();
+        map.get(1);
     }
 }

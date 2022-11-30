@@ -29,7 +29,6 @@ public class Solution4 {
     }
 
     public List<String> binaryTreePaths(TreeNode root) {
-
         ArrayList<String> res = new ArrayList<String>();
 
         if(root == null)

@@ -43,13 +43,13 @@ public class ListNode {
         if (arr == null) {
             return null;
         }
-        ListNode head = new ListNode(arr[0]);
+        ListNode head = new ListNode(0);
         ListNode cur = head;
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             cur.next = new ListNode(arr[i]);
             cur = cur.next;
         }
-        return head;
+        return head.next;
     }
 
     /**
@@ -70,11 +70,13 @@ public class ListNode {
 //            System.out.print(" ");
 //            listNode = listNode.next;
 //        }
+        ListNode pre = new ListNode();
+        pre = listNode;
         do {
-            System.out.print(listNode.value);
+            System.out.print(pre.value);
             System.out.print("->");
-            listNode = listNode.next;
-        } while (listNode != null);
+            pre = pre.next;
+        } while (pre != null);
         System.out.print("NULL");
         System.out.println();
     }
